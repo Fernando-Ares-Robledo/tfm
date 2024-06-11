@@ -1,0 +1,56 @@
+
+Este trabajo final de máster se estructura en varios capítulos, cada uno enfocado en distintos aspectos relacionados con los ataques de ransomware, su prevención, y medidas reactivas. A continuación, se presenta un breve resumen de cada capítulo:\medskip
+
+\textbf{Introducción}
+
+Se establece el contexto y la justificación del estudio, incluyendo el punto de partida y las aportaciones realizadas. Se definen los objetivos generales, específicos, de sostenibilidad y ética, así como los objetivos de entrega del proyecto y los que debe cumplir el sistema implementado. Además, se aborda el impacto en sostenibilidad, ético-social y de diversidad; el enfoque y método seguido; la planificación del trabajo; el análisis de riesgo del proyecto; y las herramientas utilizadas.\bigskip
+
+\textbf{Estado del Arte}
+
+Explora la evolución histórica del ransomware, sus tipos y modos de funcionamiento. Evalúa el impacto social y económico de estos ataques y discute las estrategias preventivas y reactivas, incluyendo un análisis detallado de diversas medidas y recomendaciones. Finalmente, se examina la detección del ransomware, se presentan ejemplos notorios y se considera la responsabilidad legal relacionada con estos ataques.\bigskip
+
+\textbf{Bacula}
+
+Este capítulo se centra en Bacula, una herramienta de backup y recuperación de datos. Se describen las características implementadas, las restricciones actuales y las limitaciones de diseño del sistema.\bigskip
+
+\textbf{Arquitectura de nuestro sistema}
+
+Detalla la implementación de los demonios de Bacula dentro de la infraestructura de TI, explicando el papel del Director de Bacula, el Demonio de Almacenamiento, el Catálogo, la Consola y el Cliente. Además, se discuten las estrategias de backup adoptadas, incluyendo completa, diferencial, incremental y mixta, así como la implementación de estas estrategias en Bacula.\bigskip\bigskip
+
+\textbf{Implementación de Bacula}
+
+Este capítulo detalla el proceso de configuración e implementación de Bacula en un entorno práctico. Comienza con la configuración inicial en Debian, incluyendo la instalación y configuración del software de administración Webmin y la configuración específica del almacenamiento utilizado por Bacula. Además, se explica cómo instalar y configurar el cliente de Bacula en sistemas Linux y Windows, así como la programación y ejecución de jobs de backup y restore. Se enfatiza en la definición de conjuntos de archivos y cómo estos influyen en la eficiencia del backup. El capítulo concluye con la verificación de la sintaxis de los archivos de configuración y las estrategias para el backup y restauración de bases de datos, proporcionando una guía completa para la implementación eficaz de Bacula en diversos sistemas operativos.\bigskip
+
+\textbf{Disaster Recovery Plan con Bacula}
+
+Este capítulo aborda cómo Bacula se integra en las estrategias de recuperación ante desastres, asegurando la continuidad del negocio en situaciones críticas. Se discuten las capacidades de Bacula para la restauración del catálogo y la recuperación de datos sin acceso al catálogo, ofreciendo soluciones prácticas para diversos escenarios de pérdida de datos. El capítulo evalúa meticulosamente los riesgos y presenta métodos para mitigarlos, resaltando la importancia de un DRP robusto.\bigskip
+
+\textbf{Compresión}
+
+El séptimo capítulo se centra en la funcionalidad de compresión dentro de Bacula, una característica clave para optimizar el almacenamiento y mejorar la eficiencia de los procesos de backup y restore. Se discute cómo la compresión afecta la velocidad de backup y restore, los tipos de compresión disponibles, y cómo configurar adecuadamente estos parámetros en Bacula para obtener el mejor equilibrio entre velocidad y reducción del tamaño de los datos. Este capítulo es esencial para entender cómo la compresión de datos puede ser utilizada estratégicamente para reducir costos y mejorar el rendimiento en un entorno de backup.\bigskip
+
+\textbf{Velocidad de Backup y restore}
+
+Este capítulo explora los factores que influyen en la velocidad de backup y restore en los sistemas gestionados por Bacula. Se discuten aspectos técnicos como la optimización del hardware, configuraciones de software, y la planificación estratégica de backups. Además, se evalúa cómo estas variables afectan la eficacia y eficiencia de los procesos de backup, proponiendo estrategias para mejorar la velocidad y garantizar backups oportunos y confiables.\bigskip
+
+
+
+\textbf{Resultados}
+
+Presenta los resultados obtenidos tras la implementación y evaluación del sistema de backups, ofreciendo una visión cuantitativa y cualitativa de la efectividad del sistema.\bigskip
+
+\textbf{Conclusiones y Trabajos Futuros}
+
+Se resumen las principales conclusiones derivadas del trabajo realizado, se evalúa el cumplimiento de los objetivos y se sugieren líneas de investigación y desarrollo futuro para continuar mejorando la seguridad frente a ataques de ransomware.\bigskip
+
+\textbf{Glosario}
+
+Define los términos técnicos y específicos utilizados a lo largo del documento para facilitar su comprensión.\bigskip
+
+\textbf{Bibliografía}
+
+Lista todas las fuentes consultadas y citadas en el desarrollo del trabajo, proporcionando el respaldo necesario para las afirmaciones y datos presentados.\bigskip
+
+\textbf{Anexos}
+
+Incluye información complementaria relevante para el estudio, como configuraciones de software, códigos fuente y otros detalles técnicos que apoyan el contenido principal del trabajo.\bigskip

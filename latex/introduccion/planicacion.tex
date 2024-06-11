@@ -1,0 +1,148 @@
+La planificación se divide en sprints de 2 semanas, ajustándose a las fechas de las PECs y otros hitos clave del proyecto. A continuación, se presenta la planificación temporal: 
+
+\begin{tcolorbox}[phasebox, title=Fases del trabajo]
+    % Sprint 1
+    \small
+    \begin{tcolorbox}[sprintbox, title=Sprint 1: Preparación y presentación del Plan de Trabajo]
+        \textbf{Tareas:}
+        \begin{itemize}
+            \item Definir el alcance del TFM y los objetivos específicos.
+            \item Selección inicial de herramientas y recursos necesarios.
+            \item Planificación inicial usando una herramienta de gestión de proyectos (Trello).
+            \item Creación de un repositorio en GitHub.
+        \end{itemize}
+        \textbf{Recursos y Herramientas:}
+        \begin{itemize}
+            \item Documentación oficial de Bacula.
+            \item Trello, Google Documents, GitHub.
+            \item Google Scholar y bases de datos académicas.
+        \end{itemize}
+        \textbf{Retrospectiva:} Revisión de la planificación inicial, ajustes según feedback del tutor. 11 Mar. - 12 Mar.\\
+        \textbf{Hito:} PEC 1- Plan de Trabajo entregado.
+    \end{tcolorbox}
+
+
+    \begin{tcolorbox}[sprintbox, title= Sprint 2 y 3: Análisis de requisitos y diseño inicial.]
+    
+        \textbf{Tareas:}
+        \begin{itemize}
+            \item Realizar una revisión exhaustiva del estado del arte en ransomware y estrategias de backup 13 Mar. - 20 Mar.
+            \item Análisis de requisitos específicos para la implementación con Bacula 21 Mar. - 27 Mar.
+            \item Diseño de la arquitectura de prueba e instalación de los requisitos necesarios. 28 Mar. - 3 Abr.
+            
+        \end{itemize}
+        \textbf{Recursos y Herramientas:}
+        \begin{itemize}
+            \item Imágenes de instalación de Debian Bookworm y Windows server.
+
+            \item Software de virtualización VirtualBox para crear entornos de pruebas seguros.
+
+        \end{itemize}
+        \textbf{Retrospectiva:} Evaluación de la comprensión del problema y del diseño propuesto  7 Abr. - 9 Abr.\\
+        \textbf{Hito:} PEC 2 entregado con análisis y diseño preliminar 9 Abr.
+
+    \end{tcolorbox}
+
+
+    \begin{tcolorbox}[sprintbox, title= Sprint 4 a 6: Configuración de Bacula y pruebas]
+        \textbf{Tareas:}
+        \begin{itemize}
+            \item Configuración de Bacula en el entorno de prueba  10 Abr. - 17 Abr.
+
+            \item Ejecución de pruebas de restauración de backups en escenarios de desaste simulados 18 Abr. - 24 Abr.
+
+            \item Reajustes en la configuración de Bacula basados en los resultados de las pruebas 25 Abr. - 1 May.
+
+            
+        \end{itemize}
+        \textbf{Recursos y Herramientas:}
+        \begin{itemize}
+            \item Software Bacula y documentación relacionada.
+            \item GitHub para documentar el proceso y resultados.
+
+        \end{itemize}
+        \textbf{Retrospectiva:} Revisión de la eficacia de las estrategias de backup y restauración implementadas 5 May. - 7 May.\\
+        \textbf{Hito:} PEC 3 entregado con resultados de implementación y pruebas 7 May.
+
+    \end{tcolorbox}
+
+    
+    \begin{tcolorbox}[sprintbox, title= Sprint 7 y 8: Documentación final y preparación de la memoria.]
+        \textbf{Tareas:}
+        \begin{itemize}
+            \item Redacción detallada de la memoria, incluyendo metodología, resultados, y análisis de las pruebas 8 May. - 15 May.
+            \item Preparación de la presentación final y el vídeo para la defensa 16 May. - 21 May.
+        \end{itemize}
+        
+        \textbf{Recursos y Herramientas:}
+        \begin{itemize}
+            \item Google Documents/LaTeX para la elaboración de la memoria.
+            \item Software para grabar video OBS 
+            \item PowerPoint/Google Presentaciones para la elaboración de la presentación
+            \item Directrices y normativa del TFM proporcionadas por la universidad para asegurar el cumplimiento en la presentación y documentación.
+
+        \end{itemize}
+        \textbf{Retrospectiva:} Evaluación completa del proyecto, ajustes finales de la documentación 21 May. - 10 Jun.\\
+        \textbf{Hito:}PEC 4 entregado con la memoria final 10 Jun.
+
+    \end{tcolorbox}
+    
+    \begin{tcolorbox}[sprintbox, title= Sprint 9: Preparación para la defensa.]
+        \textbf{Tareas:}
+        \begin{itemize}
+            \item Finalización de la presentación del TFM 12 Jun. - 15 Jun.
+            \item Preparación y grabación del vídeo de presentación 16 Jun. - 19 Jun.
+
+            \item Ensayos de la defensa del TFM 15 Jun. - 24 Jun.
+
+            
+        \end{itemize}
+       
+        \textbf{Retrospectiva:}  Revisión final y ensayo de la presentación y defensa.\\
+        \textbf{Hito:} PV entregado y defensa del TFM.
+
+    \end{tcolorbox}
+
+\end{tcolorbox}
+\medskip
+
+El diagrama de Grantt es el siguiente:
+
+\begin{landscape}
+\begin{ganttchart}[
+    hgrid,
+    vgrid={*1{blue, dashed}},
+    x unit=0.5cm,
+    y unit title=0.7cm,
+    y unit chart=0.7cm,
+    title/.append style={draw=none, fill=blue!20},
+    title label font=\bfseries\footnotesize,
+    bar/.append style={fill=blue!30},
+    bar height=0.6,
+    group right shift=0,
+    group top shift=0.7,
+    group height=.3,
+    group peaks height=.2
+    ]{1}{24}
+    % Labels
+    \gantttitle{2024}{24} \\
+    \gantttitlelist{1,...,12}{2} \\
+    % Fases
+    \ganttgroup{Fase de Inicio}{1}{4} \\
+    \ganttbar{Sprint 1: Plan de Trabajo}{1}{4} \\
+    \ganttbar{PEC 1}{4}{4} \\
+    \ganttgroup{Fase de Diseño y Análisis}{5}{8} \\
+    \ganttbar{Sprint 2 y 3: Análisis y Diseño}{5}{8} \\
+    \ganttbar{PEC 2}{8}{8} \\
+    \ganttgroup{Fase de Implementación y Pruebas}{9}{12} \\
+    \ganttbar{Sprint 4 a 6: Bacula y Pruebas}{9}{12} \\
+    \ganttbar{PEC 3}{12}{12} \\
+    \ganttgroup{Fase de Documentación}{13}{16} \\
+    \ganttbar{Sprint 7 y 8: Memoria y Presentación}{13}{16} \\
+    \ganttbar{PEC 4}{16}{16} \\
+    \ganttgroup{Fase de Presentación y Defensa}{17}{20} \\
+    \ganttbar{Sprint 9: Defensa}{17}{20} \\
+    \ganttbar{PV}{20}{20} \\
+\end{ganttchart}
+\end{landscape}
+\bigskip
