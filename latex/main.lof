@@ -1,0 +1,105 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Tipos de Ransomware y sus métodos de difusión.}}{13}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Etapas del funcionamiento de un ataque rasomware \blx@tocontentsinit {0}\autocite {enisa2022ransomware}.}}{14}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Distribución porcentual de las principales familias de ransomware identificadas en España durante el año 2023. Los datos reflejan la prevalencia de ciertas variantes de ransomware en incidentes reportados, destacando la prominencia de Win/Filecoder.STOP y Win/Filecoder.BlackMatter. Se considera ransomware 'Otros' a aquellas variantes con una frecuencia de detección inferior al 5\%.\blx@tocontentsinit {0}\autocite {Herrero2024}}}{29}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Comparativa de la velocidad de cifrado de distintas familias de ransomware. Este gráfico ilustra la duración media de cifrado para cada familia, destacando la eficiencia relativa de sus mecanismos de cifrado. Datos adaptados de un análisis comparativo de velocidades de cifrado de ransomware publicado por Splunk.\blx@tocontentsinit {0}\autocite {SplunkRansomwareSpeed}}}{30}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagrama de la arquitectura de prueba.}}{33}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Creación de un nuevo File Set en Webmin}}{38}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Visualización de File Sets existentes}}{38}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Configuración detallada de un File Set}}{38}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Programaciones de backup existentes}}{38}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Creación de una nueva programación de backup}}{39}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Edición de una programación de backup}}{39}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Clientes de respaldo.}}{39}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Interfaz para añadir un nuevo cliente de respaldo.}}{40}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Detalles del cliente a respaldar.}}{40}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Crear un job.}}{40}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Creación de un nuevo job de respaldo.}}{41}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Detalles del job de respaldo configurado.}}{41}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Interfaz para ejecutar un job de respaldo.}}{41}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Ejecución inmediata de un job de respaldo.}}{42}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Resultado detallado del job de respaldo ejecutado.}}{42}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Creacion de archivos y checksum.}}{42}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Realizando el respaldo de los archivos en Bacula.}}{43}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Eliminación de los archivos que serán restaurados.}}{43}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Configuración del proceso de restauración en Bacula.}}{43}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces salida de la restauración.}}{44}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Verificación de los archivos restaurados en el cliente Linux.}}{44}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Definición del FileSet para backups en Bacula.}}{44}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Detalles del trabajo de backup en Bacula.}}{45}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Comando para eliminar la base de datos \texttt {uoc}.}}{46}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Proceso de restauración de la base de datos \texttt {uoc}.}}{46}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Tabla restaurada en la base de datos \texttt {uoc}.}}{46}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Velocidades de Backup para Diferentes Tamaños de Archivo}}{55}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Tiempos de Backup para 1 GB Dividido en Diferentes Tamaños de Archivo}}{56}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Bytes Escritos para Diferentes Niveles de Compresión (Archivo de 2.079 GB)}}{57}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Bytes Escritos para Diferentes Niveles de Compresión (Archivo de 42 MB)}}{57}{figure.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Porcentaje de Compresión vs. Tipo de Compresión}}{58}{figure.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Tiempo de Respaldo vs. Tipo de Compresión}}{58}{figure.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Tiempos de Restauración para Diferentes Tamaños de Archivo}}{59}{figure.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Tiempos de Restauración para 1 GB Dividido en Diferentes Tamaños de Archivo}}{60}{figure.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Uso de Recursos durante el Backup}}{61}{figure.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Efecto del Número de Jobs en el Tiempo de Backup de 1 GB}}{62}{figure.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Estabilidad Temporal de Tiempos de Backup de 1 GB cada 2 Minutos}}{63}{figure.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Página de descarga de Debian}}{V}{figure.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Configuración inicial de la máquina virtual en VirtualBox}}{V}{figure.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Establecimiento de usuario y contraseña durante la instalación desatendida}}{V}{figure.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Configuración del hardware en VirtualBox}}{VI}{figure.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Asignación de espacio en el disco duro virtual}}{VI}{figure.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Proceso de actualización y mejora del sistema}}{VI}{figure.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Cambio de configuración de red a adaptador puente}}{VII}{figure.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Creación y población de la tabla \textit {uoc} en PostgreSQL mostrando los comandos ejecutados y sus resultados.}}{VIII}{figure.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Adición de reglas al firewall para Bacula}}{VIII}{figure.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Página de registro para acceso a repositorios de Bacula}}{IX}{figure.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Acceso a los binarios de Bacula}}{IX}{figure.53}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Añadiendo la clave de verificación de Bacula}}{X}{figure.54}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Añadiendo el repositorio de Bacula a sources.list}}{X}{figure.55}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Instalación de Bacula con soporte para PostgreSQL}}{XI}{figure.56}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Configuración de Bacula con PostgreSQL}}{XI}{figure.57}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Verificación de la instalación de Bacula}}{XI}{figure.58}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Instalación de Apache2}}{XIII}{figure.59}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Añadiendo reglas de HTTP y HTTPS al firewall}}{XIV}{figure.60}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Descargando y ejecutando el script de configuración de Webmin}}{XIV}{figure.61}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Instalación de Webmin}}{XIV}{figure.62}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Añadiendo el puerto de Webmin al firewall}}{XV}{figure.63}%
+\contentsline {figure}{\numberline {64}{\ignorespaces Interfaz de acceso a Webmin}}{XV}{figure.64}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Configuración de los comandos de Bacula en Webmin}}{XV}{figure.65}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Configuración de PostgreSQL para Bacula}}{XV}{figure.66}%
+\contentsline {figure}{\numberline {67}{\ignorespaces Creación del directorio de respaldos en el servidor Bacula}}{XVI}{figure.67}%
+\contentsline {figure}{\numberline {68}{\ignorespaces Interfaz de configuración de dispositivos de almacenamiento en Webmin}}{XVI}{figure.68}%
+\contentsline {figure}{\numberline {69}{\ignorespaces Creación de un nuevo dispositivo de almacenamiento en Webmin}}{XVI}{figure.69}%
+\contentsline {figure}{\numberline {70}{\ignorespaces Detalles del nuevo dispositivo de almacenamiento creado en Webmin}}{XVI}{figure.70}%
+\contentsline {figure}{\numberline {71}{\ignorespaces Configuración inicial del daemon de almacenamiento en Webmin}}{XVII}{figure.71}%
+\contentsline {figure}{\numberline {72}{\ignorespaces Añadiendo un nuevo daemon de almacenamiento en Webmin}}{XVII}{figure.72}%
+\contentsline {figure}{\numberline {73}{\ignorespaces Pool de volúmenes en Webmin}}{XVII}{figure.73}%
+\contentsline {figure}{\numberline {74}{\ignorespaces Creación de un nuevo pool de volúmenes en Webmin}}{XVII}{figure.74}%
+\contentsline {figure}{\numberline {75}{\ignorespaces Configuración de detalles del pool de volúmenes en Webmin}}{XVII}{figure.75}%
+\contentsline {figure}{\numberline {76}{\ignorespaces Adición del puerto 9102 al firewall para permitir la comunicación del File Daemon}}{XVIII}{figure.76}%
+\contentsline {figure}{\numberline {77}{\ignorespaces Confirmación de la instalación y estado del servicio Bacula File Daemon}}{XVIII}{figure.77}%
+\contentsline {figure}{\numberline {78}{\ignorespaces Configuración del archivo bacula-fd.conf con detalles del Director}}{XIX}{figure.78}%
+\contentsline {figure}{\numberline {79}{\ignorespaces Ejemplo de un error de sintaxis detectado donde una contraseña es incorrectamente interpretada como un número.}}{XX}{figure.79}%
+\contentsline {figure}{\numberline {80}{\ignorespaces Página de descargas de Bacula para Windows.}}{XXI}{figure.80}%
+\contentsline {figure}{\numberline {81}{\ignorespaces Descarga de la última versión de Bacula para Windows.}}{XXI}{figure.81}%
+\contentsline {figure}{\numberline {82}{\ignorespaces Instalador de Bacula para Windows.}}{XXII}{figure.82}%
+\contentsline {figure}{\numberline {83}{\ignorespaces Acuerdo de licencia de Bacula.}}{XXII}{figure.83}%
+\contentsline {figure}{\numberline {84}{\ignorespaces Selección del tipo de instalación en Bacula.}}{XXII}{figure.84}%
+\contentsline {figure}{\numberline {85}{\ignorespaces Selección de componentes del cliente Bacula durante la instalación.}}{XXIII}{figure.85}%
+\contentsline {figure}{\numberline {86}{\ignorespaces Elección de la ruta de instalación de Bacula.}}{XXIII}{figure.86}%
+\contentsline {figure}{\numberline {87}{\ignorespaces Configuración del cliente Bacula en Windows.}}{XXIV}{figure.87}%
+\contentsline {figure}{\numberline {88}{\ignorespaces Configuración del Director en Bacula.}}{XXIV}{figure.88}%
+\contentsline {figure}{\numberline {89}{\ignorespaces Finalización de la instalación de Bacula en Windows.}}{XXIV}{figure.89}%
+\contentsline {figure}{\numberline {90}{\ignorespaces Configuración del Firewall para Bacula.}}{XXV}{figure.90}%
+\contentsline {figure}{\numberline {91}{\ignorespaces Permitir la interacción del servicio de Bacula con el escritorio.}}{XXV}{figure.91}%
+\contentsline {figure}{\numberline {92}{\ignorespaces Acceso a Filesets en Webmin.}}{XXV}{figure.92}%
+\contentsline {figure}{\numberline {93}{\ignorespaces Creación de un nuevo Fileset.}}{XXVI}{figure.93}%
+\contentsline {figure}{\numberline {94}{\ignorespaces Configuración detallada del Fileset para Windows.}}{XXVI}{figure.94}%
+\contentsline {figure}{\numberline {95}{\ignorespaces Definición de un schedule de backup.}}{XXVI}{figure.95}%
+\contentsline {figure}{\numberline {96}{\ignorespaces Selección de Backup Clients.}}{XXVII}{figure.96}%
+\contentsline {figure}{\numberline {97}{\ignorespaces Creación de un nuevo cliente de backup para Windows.}}{XXVII}{figure.97}%
+\contentsline {figure}{\numberline {98}{\ignorespaces Creación de un nuevo job de backup.}}{XXVII}{figure.98}%
+\contentsline {figure}{\numberline {99}{\ignorespaces Ejecución de un job de backup para Windows.}}{XXVIII}{figure.99}%
+\contentsline {figure}{\numberline {100}{\ignorespaces Archivos originales creados en el directorio de documentos de Windows.}}{XXVIII}{figure.100}%
+\contentsline {figure}{\numberline {101}{\ignorespaces Proceso de backup de los archivos mediante Bacula.}}{XXVIII}{figure.101}%
+\contentsline {figure}{\numberline {102}{\ignorespaces Eliminación de archivos para simular pérdida de datos.}}{XXIX}{figure.102}%
+\contentsline {figure}{\numberline {103}{\ignorespaces Proceso de restauración de los archivos eliminados.}}{XXIX}{figure.103}%
+\contentsline {figure}{\numberline {104}{\ignorespaces Archivos restaurados visualizados en el directorio de documentos.}}{XXIX}{figure.104}%

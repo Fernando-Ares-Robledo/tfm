@@ -1,0 +1,700 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+%\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lipsum} % Este paquete es solo para generar texto de relleno.
+\usepackage[T1]{fontenc}
+\usepackage{amsmath} 
+\usepackage{color}
+\usepackage[table,rgb,xcdraw]{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{pgfgantt}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{pifont}
+\usepackage{tikz}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage[style=numeric, backend=biber, sorting=none]{biblatex}
+%\usepackage[style=numeric, backend=biber, sorting=none]{biblatex}
+\usepackage{smartdiagram}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+
+%posible fuente de error estos dos 
+\usepackage{makecell}      % Para \makecell
+\usepackage{array} 
+
+\usepackage{colortbl}
+\usepackage{siunitx} % For aligning numbers by decimal point if needed
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.8}
+\usepackage[acronym]{glossaries}
+
+\usepackage{float}
+\usepackage{smartdiagram}
+\usesmartdiagramlibrary{additions}
+% xcolor manual: 34
+\definecolorseries{colours}{hsb}{grad}[hsb]{.575,1,1}{.987,-.234,0}
+\resetcolorseries[12]{colours}
+%\usepackage{colortbl}
+%\renewcommand*\familydefault{\sfdefault}
+%\renewcommand*\familydefault{\put}
+
+
+\usetikzlibrary{shapes, arrows, positioning}
+
+\input{config}
+
+
+
+
+\usepackage{glossaries}
+ 
+\makeglossaries
+ 
+
+
+
+
+
+
+
+\definecolor{UOCBlue}{RGB}{0,84,159}
+\definecolor{LightBlue}{HTML}{74EDFF}
+\definecolor{headercolor}{gray}{0.85}
+\definecolor{tableHeader}{RGB}{211, 211, 211}
+\definecolor{rowStripes}{RGB}{242, 242, 242}
+%\definecolor{headercolor}{RGB}{79, 129, 189}
+\definecolor{oddRow}{RGB}{233, 236, 239}
+\definecolor{evenRow}{RGB}{255, 255, 255}
+\definecolor{darkblue}{RGB}{0,0,102}
+\definecolor{lightgray}{RGB}{240,240,240}
+
+\tcbuselibrary{breakable, skins}
+
+\definecolor{phasecolor}{RGB}{220,230,240} % Color de fondo para las fases
+\definecolor{sprintcolor}{RGB}{210,220,230} % Color de fondo para los sprints
+
+\usepackage[
+    type={CC},
+    modifier={by-sa},
+    version={3.0},
+]{doclicense}
+
+
+
+
+\newcommand{\topline}{ %
+        \arrayrulecolor{rulecolor}\specialrule{0.1em}{\abovetopsep}{0pt}%
+        \arrayrulecolor{tableheadcolor}\specialrule{\belowrulesep}{0pt}{0pt}%
+        \arrayrulecolor{rulecolor}}
+% Command \midline consists of 3 rules (top colour tableheadcolor, middle colour black, bottom colour white)
+\newcommand{\midtopline}{ %
+        \arrayrulecolor{tableheadcolor}\specialrule{\aboverulesep}{0pt}{0pt}%
+        \arrayrulecolor{rulecolor}\specialrule{\lightrulewidth}{0pt}{0pt}%
+        \arrayrulecolor{white}\specialrule{\belowrulesep}{0pt}{0pt}%
+        \arrayrulecolor{rulecolor}}
+% Command \bottomline consists of 2 rules (top colour
+\newcommand{\bottomline}{ %
+        \arrayrulecolor{white}\specialrule{\aboverulesep}{0pt}{0pt}%
+        \arrayrulecolor{rulecolor} %
+        \specialrule{\heavyrulewidth}{0pt}{\belowbottomsep}}%
+
+
+\newcommand{\midheader}[2]{%
+        \midrule\topmidheader{#1}{#2}}
+\newcommand\topmidheader[2]{\multicolumn{#1}{c}{\textsc{#2}}\\%
+                \addlinespace[0.5ex]}
+
+\pgfplotstableset{normal/.style ={%
+        header=true,
+        string type,
+        column type=l,
+        every odd row/.style={
+            before row=
+        },
+        every head row/.style={
+            before row={\topline\rowcolor{tableheadcolor}},
+            after row={\midtopline}
+        },
+        every last row/.style={
+            after row=\bottomline
+        },
+        col sep=&,
+        row sep=\\
+    }
+}
+
+
+\tcbset{
+    phasebox/.style={
+        colback=phasecolor,
+        colframe=white,
+        fonttitle=\bfseries,
+        colbacktitle=phasecolor,
+        coltitle=black,
+        enhanced,
+        attach boxed title to top left={yshift=-2mm, xshift=2mm},
+        boxed title style={boxrule=0pt, colframe=white},
+        before skip=10pt, % Espacio antes de la caja
+        after skip=10pt, % Espacio después de la caja
+        left=4mm, % Espacio interno izquierdo
+        right=4mm, % Espacio interno derecho
+        top=2mm, % Espacio interno superior
+        bottom=2mm, % Espacio interno inferior
+        breakable
+    },
+    sprintbox/.style={
+        colback=sprintcolor,
+        colframe=white,
+        fonttitle=\bfseries,
+        colbacktitle=sprintcolor,
+        coltitle=black,
+        enhanced,
+        attach boxed title to top left={yshift=-2mm, xshift=2mm},
+        boxed title style={boxrule=0pt, colframe=white},
+        before skip=6pt, % Espacio antes de la caja
+        after skip=6pt, % Espacio después de la caja
+        left=4mm, % Espacio interno izquierdo
+        right=4mm, % Espacio interno derecho
+        top=2mm, % Espacio interno superior
+        bottom=2mm, % Espacio interno inferior
+        breakable
+    }}
+% Configuración de la geometría de la página
+%\usepackage[headheight=2.5cm, top=2cm, bottom=1cm, left=2.5cm, right=2.5cm]{geometry}
+
+% Configuración del encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{} % Limpia el encabezado y pie de página por defecto
+\renewcommand{\headrulewidth}{0pt} % Sin línea en el encabezado
+\renewcommand{\footrulewidth}{1pt} % Ancho de la línea del pie de página
+\renewcommand{\footrule}{\hbox to\headwidth{\color{LightBlue}\leaders\hrule height \footrulewidth\hfill}} % Línea del pie de página
+\fancyhead[C]{\includegraphics[width=\textwidth]{encabezado.png}} % Cambia 'tu_imagen.png' por la ruta de tu imagen.
+\fancyfoot[L]{Fernando Ares Robledo} % Tu nombre en el pie de página izquierdo
+\fancyfoot[C]{\thepage} % Número de página en el centro del pie de página
+\fancyfoot[R]{\nouppercase{\leftmark}} % Nombre de la sección en el pie de página derecho
+
+
+\addto\captionsspanish{
+  \renewcommand{\listtablename}{Índice de tablas}
+}
+
+% Configuración de los marcadores para que capturen la sección actual
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+
+% Estilos para los títulos de secciones
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Configuración para la primera página de los capítulos o secciones
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[C]{\includegraphics[width=\textwidth]{encabezado.png}} % Encabezado para la primera página
+  \fancyfoot[L]{Fernando Ares Robledo} % Tu nombre en el pie de página izquierdo
+  \fancyfoot[C]{\thepage} % Número de página en el centro del pie de página
+  \fancyfoot[R]{\nouppercase{\leftmark}} % Nombre de la sección en el pie de página derecho
+  \renewcommand{\headrulewidth}{0pt} % Línea del encabezado fuera
+  \renewcommand{\footrulewidth}{1pt} % Línea del pie de página
+  \renewcommand{\footrule}{\hbox to\headwidth{\color{LightBlue}\leaders\hrule height \footrulewidth\hfill}}
+}
+
+
+
+
+
+
+
+
+\addbibresource{references.bib}
+
+
+
+%░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+%░░░█▀▀▀░█▀▀▀░░█▀▀░▀▀█░░█░░░░
+%░░░█░▀█░█░▀█░░█▀▀░▄▀░░░▀░░░░
+%░░░▀▀▀▀░▀▀▀▀░░▀▀▀░▀▀▀░░▀░░░░
+%░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+%      $( ͡⚆ ͜ʖ ͡⚆)╭∩╮
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% aqui epiezo a escribir
+\begin{document}
+
+
+%========================================================================%$$
+%                                                                        %$$
+%                                Portada                                 %$$
+%                                                                        %$$
+%========================================================================%$$
+                                                                         %$$
+\begin{titlepage}                                                        %$$
+    \centering                                                           %$$
+    \includegraphics[width=0.5\textwidth]                                %$$
+    {uoc_masterbrand_3linies_positiu.jpg}\par\vspace{1cm}                %$$
+    {\scshape\LARGE Universitat Oberta de Catalunya \par}                %$$
+    \vspace{1cm}                                                         %$$
+    {\scshape\Large Master en Ciberseguridad\par}                        %$$
+    \vspace{1.5cm}                                                       %$$
+    {\huge\bfseries FORTALECIENDO LA RESILIENCIA CONTRA RANSOMWARE       %$$
+    MEDIANTE ESTRATEGIAS DE BACKUP OPTIMIZADAS CON BACULA\par}           %$$
+    \vspace{2cm}                                                         %$$
+    {\Large\itshape Fernando Ares Robledo\par}                           %$$
+    \vfill                                                               %$$
+    Área del Trabajo Final:\par                                          %$$
+    Protocolos criptográficos y aplicaciones de Seguridad                %$$
+                                                                         %$$
+    \vfill                                                               %$$
+    Tutor:\par                                                           %$$
+    Rafael Páez Reyes                                                    %$$
+                                                                         %$$
+    \vfill                                                               %$$
+                                                                         %$$
+    % Bottom of the page                                                 %$$
+    {\large \today\par}                                                  %$$
+\end{titlepage}                                                          %$$
+                                                                         %$$
+%************************************************************************%$$
+%                                                                        %$$
+%                              FIN de Portada                            %$$
+%                                                                        %$$
+%========================================================================%$$
+
+\newpage
+\pagenumbering{Alph} % Esto cambia la numeración a números romanos
+
+%========================================================================%$$
+%                                                                        %$$
+%                  Página de Licencia de Distribución                    %$$
+%                                                                        %$$
+%========================================================================%$$
+                                                                         %$$
+\thispagestyle{plain} % Para que no tenga encabezado ni pie de página    %$$
+\vspace*{\fill} % Centra verticalmente el contenido de la licencia       %$$
+                                                                         %$$
+\doclicenseThis                                                          %$$
+                                                                         %$$
+\bigskip                                                                 %$$
+                                                                         %$$
+\begin{itemize}                                                          %$$
+    \item {\textbf{Atribución:} {Debes dar crédito de manera adecuada,   %$$
+    proporcionar un enlace a la licencia, e indicar si se han            %$$
+    realizado cambios. Puedes hacerlo de cualquier manera razonable,     %$$
+    pero no de manera que sugiera que el licenciante te apoya a ti       %$$
+    o al uso que haces de la obra.}}                                     %$$
+    \item {\textbf{CompartirIgual:} {Si remezclas, transformas o         %$$
+    creas a partir del material, debes distribuir tus contribuciones     %$$
+    bajo la misma licencia que el original.}}                            %$$    
+\end{itemize}                                                            %$$
+                                                                         %$$
+Para más detalles sobre los términos de la licencia, por favor visita    %$$
+                                                                         %$$
+\url{https://creativecommons.org/licenses/by-sa/3.0/es/}.                %$$
+    % Aquí incluyes el texto completo de tu licencia                     %$$
+    % Puedes usar el comando \par para separar párrafos                  %$$
+    \vspace{1cm} % Espacio después del texto de la licencia              %$$
+                                                                         %$$
+\vspace*{\fill} % Continúa centrando el contenido verticalmente          %$$
+                                                                         %$$
+%************************************************************************%$$
+%                                                                        %$$
+%                  FIN de Página de Licencia de Distribución             %$$
+%                                                                        %$$
+%========================================================================%$$
+
+
+
+\newpage
+
+
+
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|
+>{\columncolor{headercolor}}l |
+>{\raggedright\arraybackslash}p{8cm}|}
+\hline
+\multicolumn{2}{|c|}{\cellcolor{headercolor}\textbf{FICHA DEL TRABAJO FINAL}} \\ \hline
+\textbf{Título del trabajo:} & FORTALECIENDO LA RESILIENCIA CONTRA RANSOMWARE MEDIANTE ESTRATEGIAS DE BACKUP OPTIMIZADAS CON BACULA \\ \hline
+\textbf{Nombre del autor:} & Fernando Ares Robledo \\ \hline
+\textbf{Nombre del consultor/a:} & Rafael Páez Reyes \\ \hline
+\textbf{Nombre del PRA:} & Pau Perea Paños  \\ \hline
+\textbf{Fecha de entrega (mm/aaaa):} & 06/2024 \\ \hline
+\textbf{Titulación o programa:} & Máster U. en Ciberseguridad y Privacidad. \\ \hline
+\textbf{Área del Trabajo Final:} & Protocolos criptográficos y aplicaciones de Seguridad. \\ \hline
+\textbf{Idioma del trabajo:} & Castellano. \\ \hline
+\textbf{Palabras clave:} & Ransomware, Estrategias de Backup, Bacula \\ \hline
+
+
+\end{tabular}
+\end{table}
+\newpage
+\textbf{Resumen del Trabajo} 
+
+Este trabajo final de máster aborda la creciente amenaza del \Gls{ransomware} y propone fortalecer la resiliencia de los sistemas informáticos mediante la optimización de estrategias de backup, con un enfoque particular en la implementación de Bacula. Se detalla la evolución histórica del ransomware, sus métodos de ataque y el impacto socioeconómico asociado. A través de un entorno de pruebas, se evalúa la eficacia de diversas configuraciones de backup proporcionadas por Bacula, analizando su capacidad para restaurar sistemas y datos críticos tras un ataque de ransomware. Los resultados subrayan la vital importancia de una planificación y ejecución adecuadas de los backups dentro de una estrategia integral de ciberseguridad, demostrando cómo las metodologías optimizadas pueden significativamente mejorar la recuperabilidad y minimizar las pérdidas de datos. Además, se discuten recomendaciones para una implementación efectiva y se sugieren direcciones para investigaciones futuras, apuntando hacia un enfoque más robusto y resiliente frente a las amenazas de ransomware.
+\medskip
+
+\textbf{Abstract}
+
+This master's thesis addresses the escalating threat of ransomware by proposing the strengthening of computer systems' resilience through optimized backup strategies, with a specific focus on Bacula implementation. It outlines the historical evolution of ransomware, its attack methods, and associated socioeconomic impacts. Various backup configurations provided by Bacula are evaluated in a test environment, analyzing their effectiveness in restoring critical systems and data after a ransomware attack. The findings emphasize the critical importance of proper backup planning and execution within an overarching cybersecurity strategy, demonstrating how optimized methodologies can significantly enhance recoverability and minimize data losses. Furthermore, recommendations for effective implementation are discussed, and directions for future research are suggested, pointing towards a more robust and resilient approach against ransomware threats.
+
+
+\newpage
+% Restablece el estilo de página para el resto del documento
+\pagestyle{fancy}
+
+
+
+%========================================================================%$$
+%                                                                        %$$
+%                           Índices                                      %$$
+%                                                                        %$$
+%========================================================================%$$
+                                                                         %$$
+\tableofcontents                                                         %$$
+\newpage                                                                 %$$
+                                                                         %$$
+\listoffigures                                                           %$$
+\newpage                                                                 %$$
+                                                                         %$$
+\listoftables                                                            %$$
+\newpage                                                                 %$$
+                                                                         %$$
+%************************************************************************%$$
+%                                                                        %$$
+%                       FIN Indices                                      %$$
+%                                                                        %$$
+%========================================================================%$$
+
+
+
+% Cambio de numeración a números arábigos y comienzo del contenido principal
+\pagenumbering{arabic} % Esto cambia la numeración a números arábigos
+
+
+% Resto del documento
+
+
+%========================================================================%$$
+%                                                                        %$$
+%                                INTRODUCCIÓN                            %$$
+%                                                                        %$$
+%========================================================================%$$
+                                                                         %$$
+\section{Introducción}                                                   %$$
+                                                                         %$$
+\subsection{Contexto y Justificación del trabajo}                        %$$
+\input{introduccion/contexto}                                            %$$
+                                                                         %$$
+\subsection{Objetivos del Trabajo}                                       %$$
+\input{introduccion/objetivos}                                           %$$
+                                                                         %$$
+\subsection{Impacto en sostenibilidad, ético-social y de diversidad}     %$$
+\input{introduccion/InpactoSostenibilidad}                               %$$ 
+                                                                         %$$
+\subsection{Enfoque y método seguido}                                    %$$
+\input{introduccion/EnfoqueYmetodo}                                      %$$
+                                                                         %$$
+\subsection{Planificación del Trabajo}                                   %$$
+\input{introduccion/planicacion}                                         %$$
+                                                                         %$$
+\subsection{Análisis de riesgo del proyecto}                             %$$
+\input{introduccion/analisisRiesgo}                                      %$$
+                                                                         %$$
+\subsection{Descripción de los capítulos}                                %$$
+\input{introduccion/descripcionCapitulos}                                %$$
+                                                                         %$$   
+\subsection{Herramientas usadas}                                         %$$
+\input{introduccion/Herramientas}                                        %$$
+                                                                         %$$
+%************************************************************************%$$
+%                                                                        %$$
+%                         FIN de INTRODUCCIÓN                            %$$
+%                                                                        %$$
+%========================================================================%$$
+
+
+
+
+
+%========================================================================%$$
+%                                                                        %$$
+%                            Estado del arte                             %$$
+%                                                                        %$$
+%========================================================================%$$
+                                                                         %$$
+\section{Estado del arte}                                                %$$
+                                                                         %$$
+\subsection{Historia}                                                    %$$
+\input{estado_del_arte/historia.tex}                                     %$$
+                                                                         %$$
+\subsection{Tipos de ransomware}                                         %$$
+\input{estado_del_arte/tiposRasomware}                                   %$$
+                                                                         %$$
+\medskip                                                                 %$$
+\subsection{Funcionamiento del ransomware}                               %$$
+\input{estado_del_arte/funcionamiento}                                   %$$
+                                                                         %$$
+\subsection{Impacto social del ransomware}                               %$$
+\input{estado_del_arte/impacto}                                          %$$
+\newpage                                                                 %$$
+                                                                         %$$
+\subsection{Medidas preventivas ante el software}                        %$$
+\input{estado_del_arte/medidas}                                          %$$
+                                                                         %$$
+\subsection{Recomendaciones ante el ransomware}                          %$$
+\input{estado_del_arte/recomendaciones}                                  %$$
+                                                                         %$$
+\subsection{Detección del ransomware}                                    %$$
+\input{estado_del_arte/deteccion}                                        %$$
+                                                                         %$$
+\subsection{Ejemplos de ransomware}                                      %$$
+\input{estado_del_arte/ejemplosRasomware}                                %$$
+                                                                         %$$
+%%%%%%\subsection{Soluciones comerciales antiransomware}                      %$$
+%%%%%%%%%\input{estado_del_arte/soluciones}                                      %$$
+                                                                         %$$
+\subsection{Responsabilidad Legal y Ransomware}                          %$$
+\input{estado_del_arte/responsabilidad}                                  %$$
+                                                                         %$$
+%************************************************************************%$$
+%                                                                        %$$
+%                      FIN de Estado del arte                            %$$
+%                                                                        %$$
+%========================================================================%$$
+
+
+
+%========================================================================%$$
+%                                                                        %$$
+%                                Bacula                                  %$$
+%                                                                        %$$
+%========================================================================%$$
+                                                                         %$$
+\section{Bacula}                                                         %$$
+\input{bacula/bacula}                                                    %$$
+                                                                         %$$
+%************************************************************************%$$
+%                                                                        %$$
+%                          FIN de Bacula                                 %$$
+%                                                                        %$$
+%========================================================================%$$
+
+
+
+
+
+%========================================================================%$$
+%                                                                        %$$
+%                    Arquitectura de nuestro sistema                     %$$
+%                                                                        %$$
+%========================================================================%$$
+                                                                         %$$
+\section{Arquitectura de nuestro sistema}                                %$$
+\input{arquitectura/arquitectura}                                        %$$
+                                                                         %$$
+%************************************************************************%$$
+%                                                                        %$$
+%                FIN de Arquitectura de nuestro sistema                  %$$
+%                                                                        %$$
+%========================================================================%$$
+
+
+
+\newpage
+
+% implementacion
+\section{Implementación de Bacula}                                
+
+
+
+
+
+
+\input{bacula2/realizarBackup}
+
+\input{bacula2/restoreLinux}
+
+
+\input{bacula2/restoreSQL}
+\newpage
+
+
+\section{DRP}
+\input{DRP/introDRP}
+\input{DRP/evaulacionRiesgosDRP}
+\input{DRP/estrategiasDRP}
+\input{DRP/solucionesDRP}
+
+
+\section{Compresión}
+\input{compresion/compresion}
+
+\section{Velocidad de Backup y Restore }
+\input{velocidadBackup/introVelocidadBackup}
+\input{velocidadBackup/factoresVelocidadBackup}
+\input{velocidadBackup/medicionVelocidadBackup}
+\input{velocidadBackup/estrategiasVelocidadBackup}
+
+%\section{Velocidad de restore}
+%\input{velocidadRestore/introVelocidadRestore}
+%\input{velocidadRestore/factoresVelocidadRestore}
+%\input{velocidadRestore/medicionVelocidadRestore}
+%\input{velocidadRestore/estrategiasVelocidadRestore}
+
+\section{Resultados}
+\input{resultados/resultados}
+
+
+\section{Conclusiones y trabajos futuros}
+\input{conclusiones/conclusiones}
+
+\newpage
+\pagenumbering{Roman} 
+\section{Glosario}
+\textbf{Bacula:} Bacula es un conjunto de programas de respaldo (backup) de código abierto que permite gestionar backups, restauraciones y verificaciones de datos a través de una red de computadoras.
+
+\textbf{Ransomware:} El ransomware es un tipo de software malicioso que cifra los archivos de la víctima, exigiendo un rescate para restaurar el acceso a los datos.
+
+\textbf{Backup:} Copia de seguridad de datos que se utiliza para restaurar los datos originales en caso de pérdida de datos.
+
+\textbf{Restore:} Proceso de recuperación de datos a partir de un backup.
+
+\textbf{GFS:} Grandfather-Father-Son, una estrategia de rotación de copias de seguridad que implica realizar backups diarios (Son), semanales (Father) y mensuales (Grandfather).
+
+\textbf{3-2-1:} Estrategia de backup que recomienda tener tres copias de los datos en dos tipos de medios diferentes, con al menos una copia fuera del sitio.
+
+\textbf{Backup Incremental:} Tipo de backup que copia solo los datos que han cambiado desde el último backup.
+
+\textbf{Backup Diferencial:} Tipo de backup que copia todos los datos que han cambiado desde el último backup completo.
+
+\textbf{Backup Completo:} Tipo de backup que copia todos los datos seleccionados independientemente de cuándo se modificaron por última vez.
+
+\textbf{Compresión:} Proceso de reducir el tamaño de los datos para ahorrar espacio de almacenamiento o ancho de banda.
+
+\textbf{LTO:} Linear Tape-Open, una tecnología de cinta magnética utilizada para almacenamiento de datos a largo plazo.
+
+\textbf{AWS S3:} Amazon Web Services Simple Storage Service, un servicio de almacenamiento en la nube que ofrece escalabilidad, alta disponibilidad y seguridad de datos.
+
+\textbf{Demonio:} Un programa que se ejecuta en segundo plano y realiza tareas específicas, como el backup o la restauración de datos en Bacula.
+
+\textbf{Cliente:} En Bacula, un cliente es un sistema que se respalda y que tiene el Bacula File Daemon (FD) instalado para comunicar con el Director.
+
+\textbf{Trabajo:} Una tarea o job en Bacula, que especifica una operación de backup, restauración o verificación de datos.
+
+\textbf{MD5:} Algoritmo de hash que produce un valor de resumen de 128 bits a partir de un archivo o mensaje, utilizado para asegurar la integridad de los datos.
+
+\textbf{Autentificación TLS:} Transport Layer Security, un protocolo que proporciona comunicaciones seguras a través de una red mediante la autenticación y el cifrado.
+
+\textbf{Pool:} Un grupo de volúmenes de almacenamiento que Bacula utiliza para organizar y gestionar los backups.
+
+\textbf{FileExistsError:} Un error que se produce cuando se intenta crear un archivo que ya existe en el sistema.
+
+\textbf{Schedule:} Programación de tareas en Bacula, que define cuándo deben ejecutarse los trabajos de backup.
+
+\textbf{Pipe:} Un método para redirigir la salida de un comando como entrada a otro comando, útil en procesos de backup y restauración.
+
+\textbf{Catálogo de Bacula:} Base de datos que almacena la información sobre los archivos respaldados, los volúmenes de almacenamiento y el estado de los trabajos en Bacula.
+
+\textbf{Concurrencia y Multitasking:} La capacidad de Bacula para ejecutar múltiples tareas o trabajos de backup simultáneamente.
+
+\textbf{Logs:} Registros detallados de eventos y actividades del sistema, utilizados para monitorear y solucionar problemas en Bacula.
+
+\textbf{SLAs:} Service Level Agreements, acuerdos de nivel de servicio que definen los niveles de servicio esperados, incluyendo tiempos de backup y restauración.
+
+\textbf{SSDs:} Solid State Drives, dispositivos de almacenamiento de datos que utilizan memoria flash para proporcionar tiempos de acceso rápidos.
+
+\textbf{Deduplicación:} Tecnología que reduce el almacenamiento necesario eliminando copias redundantes de datos.
+
+\textbf{CPU:} Unidad Central de Procesamiento, el componente principal de un ordenador que realiza las operaciones de procesamiento de datos.
+
+\textbf{Memoria:} Dispositivo de almacenamiento temporal en un ordenador, utilizado para guardar datos y programas en uso.
+
+\newpage
+%========================================================================%$$
+%                                                                        %$$
+%                          Bibliografia                                  %$$
+%                                                                        %$$
+%========================================================================%$$
+                                                                         %$$
+\section{Bibliografía}                                                   %$$
+\printbibliography                                                       %$$
+                                                                         %$$
+%************************************************************************%$$
+%                                                                        %$$
+%                          Fin Bibliografia                              %$$
+%                                                                        %$$
+%========================================================================%$$
+
+
+
+
+
+\newpage
+
+%========================================================================%$$
+%                                                                        %$$
+%                                Anexos                                  %$$
+%                                                                        %$$
+%========================================================================%$$
+                                                                         %$$
+\section{Anexos}                                                         %$$ 
+
+
+
+
+
+\subsection{Instalación de Debian}                                       %$$
+\input{anexos/InstalarDebian}
+\input{anexos/crearTablasSQL}
+
+\input{bacula2/configBacula}        
+
+\input{bacula2/webmin}
+
+\input{bacula2/configAlmacenamientoLocal}
+\input{bacula2/configClienteBacula}
+\input{anexos/funcionamientoBpipe}
+%%%%%%%%%%%%%\input{instalacionBacula/baculaServer}                                  %$$
+
+\input{bacula2/verificarSintaxis}
+
+\input{bacula2/configClienteWindows}
+
+\input{bacula2/backupWindows}
+
+\input{bacula2/restoreWindows}
+
+                                                                         %$$
+%************************************************************************%$$
+%                                                                        %$$
+%                               Anexos                                   %$$
+%                                                                        %$$
+%========================================================================%$$
+
+
+
+
+
+%\lipsum[1-3]
+% ... el resto de tu documento ...
+
+\end{document}

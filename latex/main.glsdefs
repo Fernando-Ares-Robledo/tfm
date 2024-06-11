@@ -1,0 +1,812 @@
+\glsdefs@newdocentry{Bacula}%
+{%
+name={Bacula},%
+sort={Bacula},%
+type={main},%
+first={Bacula},%
+firstplural={Baculas},%
+text={Bacula},%
+plural={Baculas},%
+description={Bacula es un conjunto de programas de respaldo (backup) de código abierto que permite gestionar backups, restauraciones y verificaciones de datos a través de una red de computadoras},%
+descriptionplural={Bacula es un conjunto de programas de respaldo (backup) de código abierto que permite gestionar backups, restauraciones y verificaciones de datos a través de una red de computadoras},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ransomware}%
+{%
+name={ransomware},%
+sort={ransomware},%
+type={main},%
+first={ransomware},%
+firstplural={ransomwares},%
+text={ransomware},%
+plural={ransomwares},%
+description={El ransomware es un tipo de software malicioso que cifra los archivos de la víctima, exigiendo un rescate para restaurar el acceso a los datos},%
+descriptionplural={El ransomware es un tipo de software malicioso que cifra los archivos de la víctima, exigiendo un rescate para restaurar el acceso a los datos},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{backup}%
+{%
+name={backup},%
+sort={backup},%
+type={main},%
+first={backup},%
+firstplural={backups},%
+text={backup},%
+plural={backups},%
+description={Copia de seguridad de datos que se utiliza para restaurar los datos originales en caso de pérdida de datos},%
+descriptionplural={Copia de seguridad de datos que se utiliza para restaurar los datos originales en caso de pérdida de datos},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{restore}%
+{%
+name={restore},%
+sort={restore},%
+type={main},%
+first={restore},%
+firstplural={restores},%
+text={restore},%
+plural={restores},%
+description={Proceso de recuperación de datos a partir de un backup},%
+descriptionplural={Proceso de recuperación de datos a partir de un backup},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{GFS}%
+{%
+name={GFS},%
+sort={GFS},%
+type={main},%
+first={GFS},%
+firstplural={GFSs},%
+text={GFS},%
+plural={GFSs},%
+description={Grandfather-Father-Son, una estrategia de rotación de copias de seguridad que implica realizar backups diarios (Son), semanales (Father) y mensuales (Grandfather)},%
+descriptionplural={Grandfather-Father-Son, una estrategia de rotación de copias de seguridad que implica realizar backups diarios (Son), semanales (Father) y mensuales (Grandfather)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{3-2-1}%
+{%
+name={3-2-1},%
+sort={3-2-1},%
+type={main},%
+first={3-2-1},%
+firstplural={3-2-1s},%
+text={3-2-1},%
+plural={3-2-1s},%
+description={Estrategia de backup que recomienda tener tres copias de los datos en dos tipos de medios diferentes, con al menos una copia fuera del sitio},%
+descriptionplural={Estrategia de backup que recomienda tener tres copias de los datos en dos tipos de medios diferentes, con al menos una copia fuera del sitio},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{incremental}%
+{%
+name={backup incremental},%
+sort={backup incremental},%
+type={main},%
+first={backup incremental},%
+firstplural={backup incrementals},%
+text={backup incremental},%
+plural={backup incrementals},%
+description={Tipo de backup que copia solo los datos que han cambiado desde el último backup},%
+descriptionplural={Tipo de backup que copia solo los datos que han cambiado desde el último backup},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{diferencial}%
+{%
+name={backup diferencial},%
+sort={backup diferencial},%
+type={main},%
+first={backup diferencial},%
+firstplural={backup diferencials},%
+text={backup diferencial},%
+plural={backup diferencials},%
+description={Tipo de backup que copia todos los datos que han cambiado desde el último backup completo},%
+descriptionplural={Tipo de backup que copia todos los datos que han cambiado desde el último backup completo},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{full}%
+{%
+name={backup completo},%
+sort={backup completo},%
+type={main},%
+first={backup completo},%
+firstplural={backup completos},%
+text={backup completo},%
+plural={backup completos},%
+description={Tipo de backup que copia todos los datos seleccionados independientemente de cuándo se modificaron por última vez},%
+descriptionplural={Tipo de backup que copia todos los datos seleccionados independientemente de cuándo se modificaron por última vez},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{compresion}%
+{%
+name={compresión},%
+sort={compresión},%
+type={main},%
+first={compresión},%
+firstplural={compresións},%
+text={compresión},%
+plural={compresións},%
+description={Proceso de reducir el tamaño de los datos para ahorrar espacio de almacenamiento o ancho de banda},%
+descriptionplural={Proceso de reducir el tamaño de los datos para ahorrar espacio de almacenamiento o ancho de banda},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{LTO}%
+{%
+name={LTO},%
+sort={LTO},%
+type={main},%
+first={LTO},%
+firstplural={LTOs},%
+text={LTO},%
+plural={LTOs},%
+description={Linear Tape-Open, una tecnología de cinta magnética utilizada para almacenamiento de datos a largo plazo},%
+descriptionplural={Linear Tape-Open, una tecnología de cinta magnética utilizada para almacenamiento de datos a largo plazo},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{AWS}%
+{%
+name={AWS S3},%
+sort={AWS S3},%
+type={main},%
+first={AWS S3},%
+firstplural={AWS S3s},%
+text={AWS S3},%
+plural={AWS S3s},%
+description={Amazon Web Services Simple Storage Service, un servicio de almacenamiento en la nube que ofrece escalabilidad, alta disponibilidad y seguridad de datos},%
+descriptionplural={Amazon Web Services Simple Storage Service, un servicio de almacenamiento en la nube que ofrece escalabilidad, alta disponibilidad y seguridad de datos},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{demonio}%
+{%
+name={demonio},%
+sort={demonio},%
+type={main},%
+first={demonio},%
+firstplural={demonios},%
+text={demonio},%
+plural={demonios},%
+description={Un programa que se ejecuta en segundo plano y realiza tareas específicas, como el backup o la restauración de datos en Bacula},%
+descriptionplural={Un programa que se ejecuta en segundo plano y realiza tareas específicas, como el backup o la restauración de datos en Bacula},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cliente}%
+{%
+name={cliente},%
+sort={cliente},%
+type={main},%
+first={cliente},%
+firstplural={clientes},%
+text={cliente},%
+plural={clientes},%
+description={En Bacula, un cliente es un sistema que se respalda y que tiene el Bacula File Daemon (FD) instalado para comunicar con el Director},%
+descriptionplural={En Bacula, un cliente es un sistema que se respalda y que tiene el Bacula File Daemon (FD) instalado para comunicar con el Director},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{trabajo}%
+{%
+name={trabajo},%
+sort={trabajo},%
+type={main},%
+first={trabajo},%
+firstplural={trabajos},%
+text={trabajo},%
+plural={trabajos},%
+description={Una tarea o job en Bacula, que especifica una operación de backup, restauración o verificación de datos},%
+descriptionplural={Una tarea o job en Bacula, que especifica una operación de backup, restauración o verificación de datos},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{MD5}%
+{%
+name={MD5},%
+sort={MD5},%
+type={main},%
+first={MD5},%
+firstplural={MD5s},%
+text={MD5},%
+plural={MD5s},%
+description={Algoritmo de hash que produce un valor de resumen de 128 bits a partir de un archivo o mensaje, utilizado para asegurar la integridad de los datos},%
+descriptionplural={Algoritmo de hash que produce un valor de resumen de 128 bits a partir de un archivo o mensaje, utilizado para asegurar la integridad de los datos},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{autentificacion TLS}%
+{%
+name={autentificación TLS},%
+sort={autentificación TLS},%
+type={main},%
+first={autentificación TLS},%
+firstplural={autentificación TLSs},%
+text={autentificación TLS},%
+plural={autentificación TLSs},%
+description={Transport Layer Security, un protocolo que proporciona comunicaciones seguras a través de una red mediante la autenticación y el cifrado},%
+descriptionplural={Transport Layer Security, un protocolo que proporciona comunicaciones seguras a través de una red mediante la autenticación y el cifrado},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pool}%
+{%
+name={pool},%
+sort={pool},%
+type={main},%
+first={pool},%
+firstplural={pools},%
+text={pool},%
+plural={pools},%
+description={Un grupo de volúmenes de almacenamiento que Bacula utiliza para organizar y gestionar los backups},%
+descriptionplural={Un grupo de volúmenes de almacenamiento que Bacula utiliza para organizar y gestionar los backups},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{FileExistsError}%
+{%
+name={FileExistsError},%
+sort={FileExistsError},%
+type={main},%
+first={FileExistsError},%
+firstplural={FileExistsErrors},%
+text={FileExistsError},%
+plural={FileExistsErrors},%
+description={Un error que se produce cuando se intenta crear un archivo que ya existe en el sistema},%
+descriptionplural={Un error que se produce cuando se intenta crear un archivo que ya existe en el sistema},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Schedule}%
+{%
+name={Schedule},%
+sort={Schedule},%
+type={main},%
+first={Schedule},%
+firstplural={Schedules},%
+text={Schedule},%
+plural={Schedules},%
+description={Programación de tareas en Bacula, que define cuándo deben ejecutarse los trabajos de backup},%
+descriptionplural={Programación de tareas en Bacula, que define cuándo deben ejecutarse los trabajos de backup},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pipe}%
+{%
+name={pipe},%
+sort={pipe},%
+type={main},%
+first={pipe},%
+firstplural={pipes},%
+text={pipe},%
+plural={pipes},%
+description={Un método para redirigir la salida de un comando como entrada a otro comando, útil en procesos de backup y restauración},%
+descriptionplural={Un método para redirigir la salida de un comando como entrada a otro comando, útil en procesos de backup y restauración},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{catalogo de bacula}%
+{%
+name={catalogo de bacula},%
+sort={catalogo de bacula},%
+type={main},%
+first={catalogo de bacula},%
+firstplural={catalogo de baculas},%
+text={catalogo de bacula},%
+plural={catalogo de baculas},%
+description={Base de datos que almacena la información sobre los archivos respaldados, los volúmenes de almacenamiento y el estado de los trabajos en Bacula},%
+descriptionplural={Base de datos que almacena la información sobre los archivos respaldados, los volúmenes de almacenamiento y el estado de los trabajos en Bacula},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Concurrencia y Multitasking}%
+{%
+name={Concurrencia y Multitasking},%
+sort={Concurrencia y Multitasking},%
+type={main},%
+first={Concurrencia y Multitasking},%
+firstplural={Concurrencia y Multitaskings},%
+text={Concurrencia y Multitasking},%
+plural={Concurrencia y Multitaskings},%
+description={La capacidad de Bacula para ejecutar múltiples tareas o trabajos de backup simultáneamente},%
+descriptionplural={La capacidad de Bacula para ejecutar múltiples tareas o trabajos de backup simultáneamente},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{logs}%
+{%
+name={logs},%
+sort={logs},%
+type={main},%
+first={logs},%
+firstplural={logss},%
+text={logs},%
+plural={logss},%
+description={Registros detallados de eventos y actividades del sistema, utilizados para monitorear y solucionar problemas en Bacula},%
+descriptionplural={Registros detallados de eventos y actividades del sistema, utilizados para monitorear y solucionar problemas en Bacula},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{SLAs}%
+{%
+name={SLAs},%
+sort={SLAs},%
+type={main},%
+first={SLAs},%
+firstplural={SLAss},%
+text={SLAs},%
+plural={SLAss},%
+description={Service Level Agreements, acuerdos de nivel de servicio que definen los niveles de servicio esperados, incluyendo tiempos de backup y restauración},%
+descriptionplural={Service Level Agreements, acuerdos de nivel de servicio que definen los niveles de servicio esperados, incluyendo tiempos de backup y restauración},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{SSDs}%
+{%
+name={SSDs},%
+sort={SSDs},%
+type={main},%
+first={SSDs},%
+firstplural={SSDss},%
+text={SSDs},%
+plural={SSDss},%
+description={Solid State Drives, dispositivos de almacenamiento de datos que utilizan memoria flash para proporcionar tiempos de acceso rápidos},%
+descriptionplural={Solid State Drives, dispositivos de almacenamiento de datos que utilizan memoria flash para proporcionar tiempos de acceso rápidos},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Deduplicación}%
+{%
+name={Deduplicación},%
+sort={Deduplicación},%
+type={main},%
+first={Deduplicación},%
+firstplural={Deduplicacións},%
+text={Deduplicación},%
+plural={Deduplicacións},%
+description={Tecnología que reduce el almacenamiento necesario eliminando copias redundantes de datos},%
+descriptionplural={Tecnología que reduce el almacenamiento necesario eliminando copias redundantes de datos},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cpu}%
+{%
+name={CPU},%
+sort={CPU},%
+type={main},%
+first={CPU},%
+firstplural={CPUs},%
+text={CPU},%
+plural={CPUs},%
+description={Unidad Central de Procesamiento, el componente principal de un ordenador que realiza las operaciones de procesamiento de datos},%
+descriptionplural={Unidad Central de Procesamiento, el componente principal de un ordenador que realiza las operaciones de procesamiento de datos},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{memoria}%
+{%
+name={memoria},%
+sort={memoria},%
+type={main},%
+first={memoria},%
+firstplural={memorias},%
+text={memoria},%
+plural={memorias},%
+description={Dispositivo de almacenamiento temporal en un ordenador, utilizado para guardar datos y programas en uso},%
+descriptionplural={Dispositivo de almacenamiento temporal en un ordenador, utilizado para guardar datos y programas en uso},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
