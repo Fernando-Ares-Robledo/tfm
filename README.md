@@ -91,4 +91,5 @@ Accede al repositorio de GitHub para más detalles y el código fuente del proye
 ## Contacto
 
 Para más información, puedes contactarme a través de [mi perfil de GitHub](https://github.com/Fernando-Ares-Robledo).
+Mi correo: fernandoaresrobledo@gmail.com
 
